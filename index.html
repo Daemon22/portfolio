@@ -6,16 +6,18 @@
     <title>Kaile Hartzer | Portfolio</title>
     <link href="./output.css" rel="stylesheet">
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/2098054da7.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!--Start of the header-->
-    <header class="w-screen">
+    <header class="w-screen border-b-2 border-slate-700">
         <nav class="w-full flex justify-between items-center px-16 py-5">
             <p class="font-medium text-2xl">Kaile Hartzer | Portfolio</p>
-            <div class="text-lg">
+            <div class="text-lg flex gap-8">
                 <a href="#about" title="Link to About Me">About Me</a>
-                <a href="#" title="Link to Projects">Projects</a>
-                <a href="#" title="Link to Contact">Contact</a>
+                <a href="#skills" title="Link to Skills">Skills</a>
+                <a href="#projects" title="Link to Projects">Projects</a>
+                <a href="#contact" title="Link to Contact">Contact</a>
             </div>
         </nav>
     </header>
@@ -23,24 +25,169 @@
 
 <!--Start of the main content-->
     <main class="w-screen">
+<!--Start of about section-->
         <section id="about">
-            <div class="flex justify-between items-center px-16 py-16 w-full">
-                <div class="w-1/2">
-                    <h1 class="font-semibold text-3xl">Hi, I'm Kaile!</h1>
-                    <p class="font-light text-lg">I am 29 years old. I live in Durban, South Africa.</p>
+            <div class="flex justify-between items-center p-16 w-full">
+                <div>
+                    <h1 class="font-semibold text-5xl">Hi, I'm Kaile!</h1>
+                    <p class="font-light text-lg">I am 29 years old and I live in Durban, South Africa.</p>
                 </div>
-                <div class="w-1/2">
+                <div>
                     <img src="./resources/logo.png" alt="Kaile Hartzer" />
                 </div>
             </div>
-            
         </section>
+<!--End of about section-->
+
+<!--Start of skills section-->
+        <section id="skills">
+            <div class="p-16 flex flex-col gap-12">
+                <h2 class="font-medium text-4xl">Skills</h2>
+                <div class="flex justify-between items-center">
+                    <i class="fab fa-html5 fa-2xl"></i>
+                    <i class="fab fa-css3-alt fa-2xl"></i>
+                    <i class="fab fa-js fa-2xl"></i>
+                    <i class="fab fa-react fa-2xl"></i>
+                    <i class="fab fa-figma fa-2xl"></i>
+                    <i class="fab fa-git fa-2xl"></i>
+                    <i class="fas fa-terminal fa-2xl"></i>
+                    <i class="fab fa-npm fa-2xl"></i>
+                    <i class="fab fa-node fa-2xl"></i>
+                    <i class="fab fa-github fa-2xl"></i>
+                </div>
+            </div>
+        </section>
+<!--End of skills section-->
+
+<!--Start of projects section-->
+        <section id="projects">
+            <div class="p-16">
+                <h2>Projects</h2>
+                <div id="projects-dev">
+                    <h3>Web Design &amp; Development</h3>
+                    <div id="projects-container" class="flex justify-between">
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 1</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 2</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 3</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects-dtp">
+                    <h3>Digital to Print (DTP)</h3>
+                    <div id="projects-container" class="flex justify-between">
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 1</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 2</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 3</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects-graphics">
+                    <h3>Graphics</h3>
+                    <div id="projects-container" class="flex justify-between">
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 1</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 2</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="#" alt="#" />
+                            </div>
+                            <h4>Project 3</h4>
+                            <p>This is some text about the project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--End of projects section-->
+
+<!--Start of contact section-->
+        <section id="contact">
+            <div class="p-16 flex flex-col justify-center">
+                <h2>Get in Touch</h2>
+                <form action="submission.html" method="POST" class="flex flex-col justify-center gap-4 w-1/2 p-4 border-2 border-slate-700 rounded">
+                    <div class="flex flex-col">
+                        <label for="fname">First Name</label>
+                        <input id="fname" type="text" name="fname" pattern="[a-zA-Z]+" required class="border-2 border-slate-400 rounded" />
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="lname">Last Name</label>
+                        <input id="lname" type="text" name="lname" pattern="[a-zA-Z]+" required class="border-2 border-slate-400 rounded" />
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" name="email" pattern="[a-zA-Z0-9]+" required class="border-2 border-slate-400 rounded" />
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="message">Message</label>
+                        <textarea minlength="20" maxlength="400" rows="8" cols="40" class="border-2 border-slate-400 rounded"></textarea>
+                    </div>
+                    <button type="submit" value="Send" class="border-2 border-slate-400 rounded">Send</button>
+                </form>
+            </div>
+        </section>
+<!--End of contact section-->
     </main>
 <!--End of the main content-->
 
 <!--Start of the footer-->
     <footer>
-
+        <div class="px-16 py-5 flex justify-between items-center bg-slate-700">
+            <div class="w-12">
+                <img src="./resources/logo.png" alt="logo">
+            </div>
+            <div class="flex gap-4">
+                <a href="tel:+27781308527" target="_blank"><i class="fa-solid fa-square-phone" style="color:#ffffff;"></i></a>
+                <a href="mailto:hartzerkaile@icloud.com" target="_blank"><i class="fa-solid fa-square-envelope" style="color:#ffffff;"></i></a>
+                <a href="https://www.linkedin.com/in/kaile-hartzer/" target="_blank"><i class="fa-brands fa-linkedin" style="color:#ffffff;"></i></a>
+                <a href="https://github.com/Daemon22" target="_blank"><i class="fa-brands fa-square-github" style="color:#ffffff;"></i></a>
+                <a href="https://www.behance.net/kaile_hartzer" target="_blank"><i class="fa-brands fa-square-behance" style="color:#ffffff;"></i></a>
+            </div>
+        </div>
     </footer>
 <!--End of the footer-->
 </body>
